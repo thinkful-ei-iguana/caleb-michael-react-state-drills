@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> renders no sections as active by default with section props input 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value={0}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value={1}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value={2}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`<Accordion /> renders this UI with default props, no props sent in 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value={0}
+    >
+      Default Title
+    </button>
+  </li>
+</ul>
+`;
