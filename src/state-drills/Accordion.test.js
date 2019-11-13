@@ -1,6 +1,6 @@
 import React from "react";
 import { configure } from "enzyme";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Accordion from "./Accordion";
 import toJson from "enzyme-to-json";
@@ -36,7 +36,7 @@ describe("<Accordion />", () => {
   });
 
   it("renders the first section when clicked", () => {
-    const wrapper = shallow(<Accordion sections={testArray} />);
+    const wrapper = mount(<Accordion sections={testArray} />);
     wrapper
       .find("button")
       .at(1)
@@ -45,7 +45,7 @@ describe("<Accordion />", () => {
   });
 
   it("renders only the last section opened after multiple sections have been clicked", () => {
-    const wrapper = shallow(<Accordion sections={testArray} />);
+    const wrapper = mount(<Accordion sections={testArray} />);
     console.log(wrapper.find("button"));
     wrapper
       .find("button")
