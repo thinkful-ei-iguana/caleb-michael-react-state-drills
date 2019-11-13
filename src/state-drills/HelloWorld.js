@@ -9,6 +9,7 @@ export default class HelloWorld extends React.Component {
   }
 
   onClickHandler = e => {
+    console.log(e.target.value);
     this.setState({
       who: e.target.value
     });
@@ -18,9 +19,15 @@ export default class HelloWorld extends React.Component {
     return (
       <div>
         <p>Hello, {this.state.who}!</p>
-        <button onClick={this.onClickHandler}>Friend</button>
-        <button onClick={this.onClickHandler}>React</button>
-        <button onClick={this.onClickHandler}>World</button>
+        <button onClick={this.onClickHandler} value="Friend">
+          Friend
+        </button>
+        <button onClick={this.onClickHandler} value="React">
+          React
+        </button>
+        <button onClick={this.onClickHandler} value="World">
+          World
+        </button>
       </div>
     );
   }
